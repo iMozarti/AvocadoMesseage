@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Chat">
+   <children>
+      <AnchorPane prefHeight="410.0" prefWidth="169.0" style="-fx-background-color: #525B5E;">
+         <children>
+            <ListView fx:id="friendList" layoutY="59.0" prefHeight="323.0" prefWidth="183.0" style="-fx-background-color: #525B5E;" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="59.0" prefWidth="701.0" style="-fx-background-color: #1d6902;">
+         <children>
+            <Pane layoutX="181.0" prefHeight="59.0" prefWidth="1.0" style="-fx-background-color: #525B5E;" />
+            <ImageView accessibleRole="BUTTON" fitHeight="51.0" fitWidth="52.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/men_icon.png" />
+               </image>
+               <effect>
+                  <Bloom threshold="0.11" />
+               </effect></ImageView>
+            <Label layoutX="194.0" layoutY="16.0" text="AvocadoMessage" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="23.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.88" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="67.0" layoutX="379.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/app_icon.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect>
+            </ImageView>
+            <Label fx:id="FirstNameLabel" layoutX="65.0" layoutY="14.0" prefHeight="17.0" prefWidth="113.0" textFill="#ffffff">
+               <font>
+                  <Font name="Bauhaus 93" size="12.0" />
+               </font></Label>
+            <Label fx:id="LastNameLabel" layoutX="65.0" layoutY="36.0" prefHeight="17.0" prefWidth="113.0" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="12.0" />
+               </font></Label>
+            <Button fx:id="exitButton" layoutX="654.0" layoutY="16.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="32.0" style="-fx-background-image: no-repeat;" styleClass="exitButton" stylesheets="@Style.css">
+               <effect>
+                  <Bloom />
+               </effect></Button>
+         </children></AnchorPane>
+      <TextField fx:id="messageField" layoutX="192.0" layoutY="383.0" onKeyPressed="#sendMessageByKey" prefHeight="26.0" prefWidth="485.0" promptText="Write messeage here..." />
+      <Button fx:id="SendButton" layoutX="675.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#handleSentVent" prefHeight="25.0" prefWidth="23.0" style="-fx-background-radius: 360;" styleClass="logButton" stylesheets="@Style.css" />
+      <TextArea fx:id="messeagesarea" editable="false" layoutX="191.0" layoutY="59.0" prefHeight="323.0" prefWidth="510.0" wrapText="true">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

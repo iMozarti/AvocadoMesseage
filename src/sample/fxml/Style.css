@@ -1,0 +1,28 @@
+
+.logButton {
+    -fx-background-image: url(../../img/send_button.png);
+    -fx-background-size: 25px;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #1d6902;
+}
+
+.exitButton{
+    -fx-background-image: url(../../img/door-opened.png);
+    -fx-background-size: 30px 30px;
+    -fx-background-color: Transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+.searchButton{
+    -fx-background-image: url(../../img/search_icon.png);
+    -fx-background-size: 30px 15px;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: Transparent;
+}
+
+.backButton{
+    -fx-shape:"M26.025 14.496l-14.286-.001 6.366-6.366L15.979 6 5.975 16.003 15.971 26l2.129-2.129-6.367-6.366h14.29z";
+    -fx-background-color: white;
+}

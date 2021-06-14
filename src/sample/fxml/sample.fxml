@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller">
+   <children>
+      <AnchorPane prefHeight="97.0" prefWidth="700.0" style="-fx-background-color: #1d6902;">
+         <children>
+            <Label layoutX="226.0" layoutY="25.0" prefHeight="46.0" prefWidth="226.0" text="AvocadoMessage" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="29.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="449.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/app_icon.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect>
+            </ImageView>
+            <Label fx:id="error_label1" layoutX="563.0" layoutY="37.0" prefHeight="46.0" prefWidth="122.0" text="User does not exist&#10;" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP" underline="true" visible="false">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="LoginField" alignment="CENTER" layoutX="276.0" layoutY="175.0" promptText="Username">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="PasswordField" alignment="CENTER" layoutX="276.0" layoutY="216.0" promptText="Password">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font></PasswordField>
+      <Label layoutX="278.0" layoutY="121.0" prefHeight="28.0" prefWidth="143.0" text="Authorization" textFill="#1d6902">
+         <font>
+            <Font name="Bauhaus 93" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="LogInButton" layoutX="278.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #1d6902; -fx-background-radius: 230;" text="LogIn" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font></Button>
+      <Button fx:id="RegisterButton" layoutX="278.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #1d6902; -fx-background-radius: 230;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="285.0" layoutY="357.0" prefHeight="17.0" prefWidth="143.0" />
+      <Label fx:id="error_label2" layoutX="464.0" layoutY="175.0" prefHeight="64.0" prefWidth="122.0" text="Please check input&#10;or push Registration" textFill="217801" visible="false">
+         <font>
+            <Font name="Bauhaus 93" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
